@@ -521,6 +521,15 @@ const XMLExportingThemselves: number[] = [
 const customSvgScale: Record<number, number> = {
 };
 
+const customDepths: Record<
+  number,
+  Record<number, number[]>
+> = {
+  712: {
+    3: [462, 464, 333, 681, 683, 685, 687, 464, 694, 465, 462],
+  },
+};
+
 const getSvg = (symbolName: string, svgIndex: number): Svg => {
   const name = symbolName.split(' ').join('');
   let svgNumber = +name.replace('Symbol', '');
@@ -738,6 +747,29 @@ const parseSymbol = (symbolItem?: DOMSymbolItem): Symbol => {
   // Revert parts
   if (result.parts) {
     result.parts.reverse();
+  }
+
+  // Reorder frame parts if custom depth exists
+  if (customDepths[symbolNumber]) {
+    Object.entries(customDepths[symbolNumber]).forEach(([index, parts]) => {
+      if (!result.frames) return;
+
+      const usedPartNumbers: Record<number, number | undefined> = {};
+      const reorderedParts: FramePart[] = [];
+      for (let i = 0; i < parts.length; i++) {
+        const partNumber = parts[i];
+        const framePart = result.frames[+index]?.filter((framePart) => framePart.name === `Symbol${partNumber}`)[usedPartNumbers[partNumber] || 0];
+
+        if (!framePart) {
+          throw new Error(`Part ${partNumber} not found in frame ${index}`);
+        }
+
+        reorderedParts.push(framePart);
+        usedPartNumbers[partNumber] = (usedPartNumbers[partNumber] || 0) + 1;
+      }
+
+      result.frames[+index] = reorderedParts;
+    });
   }
 
   // Initialize empty frames

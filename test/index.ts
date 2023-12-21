@@ -251,6 +251,10 @@ class Fighter {
   
       const frameParts = symbol.frames?.[frameToLoad] ?? [];
       const usedContainers: Record<string, number> = {};
+      
+      if (symbol.name === 'Symbol712') {
+        console.log(frameParts);
+      }
   
       for (let i = 0; i < frameParts.length; i++) {
         const framePart = frameParts[i];
@@ -363,7 +367,7 @@ const fighter = new Fighter({
   },
   parts: {
     _p2: 0,  // Body size (small = 0, big = 7) (male only, 0 for females)
-    _p3: 4,  // Hair [0-11] 12 = no head
+    _p3: 3,  // Hair [0-11] 12 = no head
     _p4: 3,  // (male) Beard [0-4] 5 = nothing / (female) Front hair [0-2] 3 = nothing
     _p7: 1,  // Main clothing [0-6] 7 = naked
     _p1: 0,  // Armor variation [0-1]
