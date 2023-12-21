@@ -1,6 +1,6 @@
 {
   "name": "labrute-static-fla-parser",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/Symbols.js",
   "module": "dist/Symbols.js",
