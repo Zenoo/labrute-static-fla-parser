@@ -1,0 +1,46 @@
+{
+  "type": "symbol",
+  "name": "Symbol667",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol664",
+      "colorIdx": "_col2"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol666",
+      "colorIdx": "_col3"
+    }
+  ],
+  "frames": [
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol664",
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol666",
+        "transform": {
+          "tx": -4.1,
+          "ty": 4.2
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol664",
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ]
+  ]
+}

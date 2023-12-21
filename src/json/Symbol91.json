@@ -1,0 +1,194 @@
+{
+  "type": "symbol",
+  "name": "Symbol91",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol71",
+      "colorIdx": "_col0"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol71",
+      "colorIdx": "_col2"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol90",
+      "partIdx": "_p1"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol85",
+      "partIdx": "_p1"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol80",
+      "partIdx": "_p1"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol76",
+      "partIdx": "_p1"
+    }
+  ],
+  "frames": [
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol76",
+        "transform": {
+          "tx": -3.8,
+          "ty": -0.6,
+          "a": -0.798675537109375,
+          "d": 0.798675537109375,
+          "b": 0.599151611328125,
+          "c": 0.599151611328125
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol71",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol71",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol80",
+        "transform": {
+          "tx": -3.5,
+          "ty": -0.8
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol71",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol85",
+        "transform": {
+          "tx": -8.55,
+          "ty": 4.35
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol71",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol90",
+        "transform": {
+          "tx": -11.55,
+          "ty": 3.25
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol71",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol71",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol71",
+        "colorOffset": {
+          "r": -110,
+          "g": -90,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0,
+          "a": 1.028564453125,
+          "d": 1.028564453125
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol71",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ]
+  ]
+}

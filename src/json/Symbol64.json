@@ -1,0 +1,43 @@
+{
+  "type": "symbol",
+  "name": "Symbol64",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol63",
+      "partIdx": "_p1"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol62",
+      "partIdx": "_p1"
+    }
+  ],
+  "frames": [
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol62",
+        "transform": {
+          "tx": 2.45,
+          "ty": 5.45
+        }
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol63",
+        "transform": {
+          "tx": -0.35,
+          "ty": -3.4
+        }
+      }
+    ]
+  ]
+}

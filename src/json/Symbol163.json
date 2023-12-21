@@ -1,0 +1,82 @@
+{
+  "type": "symbol",
+  "name": "Symbol163",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol138",
+      "colorIdx": "_col3"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol138",
+      "colorIdx": "_col0"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol140",
+      "colorIdx": "_col3"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol162",
+      "partIdx": "_p7"
+    }
+  ],
+  "frames": [
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol162",
+        "transform": {
+          "tx": -0.05,
+          "ty": 12.75
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol140",
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol138",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol162",
+        "transform": {
+          "tx": -0.05,
+          "ty": 12.75
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol138",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ]
+  ]
+}

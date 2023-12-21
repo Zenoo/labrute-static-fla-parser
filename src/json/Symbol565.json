@@ -1,0 +1,50 @@
+{
+  "type": "symbol",
+  "name": "Symbol565",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol560",
+      "colorIdx": "_col4b"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol562",
+      "colorIdx": "_col3"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol564",
+      "colorIdx": "_col4a"
+    }
+  ],
+  "frames": [
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol564",
+        "transform": {
+          "tx": 2.85,
+          "ty": 16.8
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol562",
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol560",
+        "transform": {
+          "tx": -0.95,
+          "ty": 16.35
+        }
+      }
+    ]
+  ]
+}

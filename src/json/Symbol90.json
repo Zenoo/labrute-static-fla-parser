@@ -1,0 +1,37 @@
+{
+  "type": "symbol",
+  "name": "Symbol90",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol87",
+      "colorIdx": "_col3"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol89",
+      "colorIdx": "_col2"
+    }
+  ],
+  "frames": [
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol89",
+        "transform": {
+          "tx": -3.05,
+          "ty": 0.5
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol87",
+        "transform": {
+          "tx": 0.95,
+          "ty": -1.05
+        }
+      }
+    ]
+  ]
+}

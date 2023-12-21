@@ -1,0 +1,29 @@
+{
+  "type": "symbol",
+  "name": "Symbol41",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol40",
+      "colorIdx": "_col2"
+    }
+  ],
+  "frames": [
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol40",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": -0.15,
+          "ty": -0.2
+        }
+      }
+    ]
+  ]
+}

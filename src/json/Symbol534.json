@@ -1,0 +1,23 @@
+{
+  "type": "symbol",
+  "name": "Symbol534",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol533",
+      "partIdx": "_p2"
+    }
+  ],
+  "frames": [
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol533",
+        "transform": {
+          "tx": -0.1,
+          "ty": 16.4
+        }
+      }
+    ]
+  ]
+}

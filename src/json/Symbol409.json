@@ -1,0 +1,41 @@
+{
+  "type": "symbol",
+  "name": "Symbol409",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol402",
+      "colorIdx": "_col0"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol408",
+      "partIdx": "_p7"
+    }
+  ],
+  "frames": [
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol408",
+        "transform": {
+          "tx": -2.75,
+          "ty": 7.6
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol402",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ]
+  ]
+}

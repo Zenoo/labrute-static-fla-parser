@@ -1,0 +1,71 @@
+{
+  "type": "symbol",
+  "name": "Symbol595",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol594",
+      "colorIdx": "_col3"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol592",
+      "colorIdx": "_col2"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol592",
+      "colorIdx": "_col2"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol590",
+      "colorIdx": "_col3"
+    }
+  ],
+  "frames": [
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol590",
+        "transform": {
+          "tx": 0.3,
+          "ty": -8.3
+        }
+      }
+    ],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol592",
+        "transform": {
+          "tx": 0.3,
+          "ty": -8.3
+        }
+      }
+    ],
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol592",
+        "transform": {
+          "tx": 0.3,
+          "ty": -8.3
+        }
+      }
+    ],
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol594",
+        "transform": {
+          "tx": 0.3,
+          "ty": -8.3
+        }
+      }
+    ]
+  ]
+}

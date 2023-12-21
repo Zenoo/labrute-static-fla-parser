@@ -1,0 +1,73 @@
+{
+  "name": "labrute-static-fla-parser",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/Symbols.js",
+  "module": "dist/Symbols.js",
+  "types": "dist/Symbols.d.ts",
+  "scripts": {
+    "build": "rollup --config && rollup --config rollup-declarations.config.mjs && rm -r dist/src",
+    "test": "webpack-dev-server --mode development",
+    "deploy": "bash ./release-dist.bash",
+    "export-xml": "ts-node ./src/exportXmlAsJson.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zenoo/labrute-sla-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zenoo/labrute-sla-parser/issues"
+  },
+  "homepage": "https://github.com/Zenoo/labrute-sla-parser#readme",
+  "keywords": [
+    "twinoid",
+    "muxxu",
+    "motion-twin",
+    "mybrute",
+    "labrute",
+    "parser",
+    "fla",
+    "xml"
+  ],
+  "author": "Zenoo",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.7",
+    "@pixi/filter-glow": "^5.2.1",
+    "@pixi/ticker": "^7.3.2",
+    "@rollup/plugin-json": "^6.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "babel-loader": "^8.2.3",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "html-webpack-plugin": "^5.5.0",
+    "pixi.js": "^7.3.2",
+    "rollup": "^4.2.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.6.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1",
+    "xml-js": "^1.6.11"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "symbol",
+  "name": "Symbol74",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol73"
+    }
+  ],
+  "frames": [
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol73",
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      }
+    ]
+  ]
+}

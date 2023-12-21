@@ -1,0 +1,43 @@
+{
+  "type": "symbol",
+  "name": "Symbol204",
+  "parts": [
+    {
+      "type": "symbol",
+      "name": "Symbol203",
+      "partIdx": "_p1"
+    },
+    {
+      "type": "symbol",
+      "name": "Symbol202",
+      "colorIdx": "_col3"
+    }
+  ],
+  "frames": [
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol202",
+        "transform": {
+          "tx": 0.15,
+          "ty": -8.3
+        }
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "type": "symbol",
+        "name": "Symbol203",
+        "transform": {
+          "tx": 0.25,
+          "ty": -8.35
+        }
+      }
+    ]
+  ]
+}
