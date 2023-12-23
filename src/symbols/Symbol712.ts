@@ -334,6 +334,22 @@ export const Symbol712: Symbol = {
       },
       {
         "type": "symbol",
+        "name": "Symbol465",
+        "transform": {
+          "tx": 0,
+          "ty": 0
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol694",
+        "transform": {
+          "tx": -11.25,
+          "ty": 4.65
+        }
+      },
+      {
+        "type": "symbol",
         "name": "Symbol464",
         "transform": {
           "tx": 27.2,
@@ -342,15 +358,35 @@ export const Symbol712: Symbol = {
       },
       {
         "type": "symbol",
-        "name": "Symbol333",
+        "name": "Symbol687",
         "colorOffset": {
           "r": -16,
           "g": -50,
           "b": -80
         },
         "transform": {
-          "tx": 0,
-          "ty": 6.05
+          "tx": 21.5,
+          "ty": 21.35
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol685",
+        "transform": {
+          "tx": -1.85,
+          "ty": -2.5
+        }
+      },
+      {
+        "type": "symbol",
+        "name": "Symbol683",
+        "transform": {
+          "tx": -11.85,
+          "ty": 26.65,
+          "a": 0.995819091796875,
+          "d": 0.9999847412109375,
+          "b": 0.088043212890625,
+          "c": 0
         }
       },
       {
@@ -369,35 +405,15 @@ export const Symbol712: Symbol = {
       },
       {
         "type": "symbol",
-        "name": "Symbol683",
-        "transform": {
-          "tx": -11.85,
-          "ty": 26.65,
-          "a": 0.995819091796875,
-          "d": 0.9999847412109375,
-          "b": 0.088043212890625,
-          "c": 0
-        }
-      },
-      {
-        "type": "symbol",
-        "name": "Symbol685",
-        "transform": {
-          "tx": -1.85,
-          "ty": -2.5
-        }
-      },
-      {
-        "type": "symbol",
-        "name": "Symbol687",
+        "name": "Symbol333",
         "colorOffset": {
           "r": -16,
           "g": -50,
           "b": -80
         },
         "transform": {
-          "tx": 21.5,
-          "ty": 21.35
+          "tx": 0,
+          "ty": 6.05
         }
       },
       {
@@ -406,22 +422,6 @@ export const Symbol712: Symbol = {
         "transform": {
           "tx": -12.15,
           "ty": -19.3
-        }
-      },
-      {
-        "type": "symbol",
-        "name": "Symbol694",
-        "transform": {
-          "tx": -11.25,
-          "ty": 4.65
-        }
-      },
-      {
-        "type": "symbol",
-        "name": "Symbol465",
-        "transform": {
-          "tx": 0,
-          "ty": 0
         }
       },
       {

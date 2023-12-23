@@ -6,8 +6,7 @@ export const Symbol726: Symbol = {
   "name": "Symbol726",
   "parts": [
     {
-      ...Symbol725,
-      "partIdx": "_p5"
+      ...Symbol725
     }
   ],
   "frames": [

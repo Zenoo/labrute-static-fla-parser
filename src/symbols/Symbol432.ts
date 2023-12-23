@@ -6,36 +6,28 @@ export const Symbol432: Symbol = {
   "name": "Symbol432",
   "parts": [
     {
-      ...Symbol431,
-      "partIdx": "_p5"
+      ...Symbol431
     },
     {
-      ...Symbol431,
-      "partIdx": "_p5"
+      ...Symbol431
     },
     {
-      ...Symbol431,
-      "partIdx": "_p5"
+      ...Symbol431
     },
     {
-      ...Symbol431,
-      "partIdx": "_p5"
+      ...Symbol431
     },
     {
-      ...Symbol431,
-      "partIdx": "_p5"
+      ...Symbol431
     },
     {
-      ...Symbol431,
-      "partIdx": "_p5"
+      ...Symbol431
     },
     {
-      ...Symbol431,
-      "partIdx": "_p5"
+      ...Symbol431
     },
     {
-      ...Symbol431,
-      "partIdx": "_p5"
+      ...Symbol431
     }
   ],
   "frames": [
