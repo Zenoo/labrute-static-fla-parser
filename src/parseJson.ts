@@ -519,6 +519,37 @@ const XMLExportingThemselves: number[] = [
 ];
 
 const customSvgScale: Record<number, number> = {
+  // Jacket
+  267: 4,
+  280: 4,
+  // Female eyes
+  341: 4,
+  342: 4,
+  337: 4,
+  344: 4,
+  346: 4,
+  // Female upper arm
+  58: 1.5,
+  // Female lower arm
+  728: 1.5,
+  // Female hair
+  697: 1.5,
+  // Female shoulder pads
+  72: 2,
+  73: 4,
+  75: 1.5,
+  // Female ear
+  686: 1.5,
+  // Male eyes
+  334: 4,
+  335: 4,
+  339: 4,
+  // Male special jacket
+  269: 4,
+  282: 4,
+  // Male hair
+  374: 4,
+  376: 4,
 };
 
 // Some parts only have one frame even though they depend on a partIdx, so ignore them
@@ -551,17 +582,20 @@ const getSvg = (symbolName: string, svgIndex: number): Svg => {
     throw new Error(`SVG ${svgLink} not found for ${name}. Export it and rerun the script.`);
   }
 
-  // Set every stroke-width to 1
-  svg = svg.replace(/stroke-width="[^"]+"/g, 'stroke-width="1"');
+  const svgScale = customSvgScale[svgNumber] ?? 1;
+  const strokeWidth = 1 / svgScale;
 
-  // Increase svg width by 2
-  svg = svg.replace(/width="([^"]+)px"/, (_, width) => `width="${+width + 2}px"`);
+  // Set every stroke-width to 1 (scaled)
+  svg = svg.replace(/stroke-width="[^"]+"/g, `stroke-width="${strokeWidth}"`);
 
-  // Increase svg height by 2
-  svg = svg.replace(/height="([^"]+)px"/, (_, height) => `height="${+height + 2}px"`);
+  // Increase svg width by 2 (scaled)
+  svg = svg.replace(/width="([^"]+)px"/, (_, width) => `width="${+width + (strokeWidth * 2)}px"`);
 
-  // Increase tx and ty by 1
-  svg = svg.replace(/<g transform="matrix\(1.0, 0.0, 0.0, 1.0, ([^,]+), ([^,]+)\)">/, (_, tx, ty) => `<g transform="matrix(1.0, 0.0, 0.0, 1.0, ${+tx + 1}, ${+ty + 1})">`);
+  // Increase svg height by 2 (scaled)
+  svg = svg.replace(/height="([^"]+)px"/, (_, height) => `height="${+height + (strokeWidth * 2)}px"`);
+
+  // Increase tx and ty by 1 (scaled)
+  svg = svg.replace(/<g transform="matrix\(1.0, 0.0, 0.0, 1.0, ([^,]+), ([^,]+)\)">/, (_, tx, ty) => `<g transform="matrix(1.0, 0.0, 0.0, 1.0, ${+tx + strokeWidth}, ${+ty + strokeWidth})">`);
 
   // Get the offset values from the svg file
   const offset = svg.match(/<g transform="matrix\(1.0, 0.0, 0.0, 1.0, (.*), (.*)\)">/);

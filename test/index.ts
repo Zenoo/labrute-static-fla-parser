@@ -365,19 +365,19 @@ const fighter = new Fighter({
     _col4a: '#00ff00', // Shoes accent ?
     _col4b: '#0000ff', // ??
   },
-  //p2:3,p3:11,p4:1,p7:3,p1:1,p1a:0,p1b:1,p6:1,p8:3,p7b:2,p5:1
+  //p2:5,p3:3,p4:3,p7:6,p1:0,p1a:1,p1b:0,p6:1,p8:1,p7b:0,p5:0
   parts: {
-    _p2: 3,  // Body size (small = 0, big = 7) (male only, 0 for females)
-    _p3: 11,  // Hair [0-11] 12 = no head
-    _p4: 1,  // (male) Beard [0-4] 5 = nothing / (female) Front hair [0-2] 3 = nothing
-    _p7: 3,  // Main clothing [0-6] 7 = naked
-    _p1: 1,  // Armor variation [0-1]
-    _p1a: 0, // [0-1] 0=belt, 1=nothing
-    _p1b: 1, // 0=roman belt, 1=nothing
+    _p2: 5,  // Body size (small = 0, big = 7) (male only, 0 for females)
+    _p3: 3,  // Hair [0-11] 12 = no head
+    _p4: 3,  // (male) Beard [0-4] 5 = nothing / (female) Front hair [0-2] 3 = nothing
+    _p7: 6,  // Main clothing [0-6] 7 = naked
+    _p1: 0,  // Armor variation [0-1]
+    _p1a: 1, // [0-1] 0=belt, 1=nothing
+    _p1b: 0, // 0=roman belt, 1=nothing
     _p6: 1,  // (male) 0=shorts, 1=trousers / (female) 0=shorts, 1=nothing
-    _p8: 3,  // [0-4] Supposed to be shoes but doesn't change anything ??
-    _p7b: 2, // Shoes underside (2 = visible, others = hidden)
-    _p5: 1,  // 0=Nothing, 1=Shirt. Doesn't work
+    _p8: 1,  // [0-4] Supposed to be shoes but doesn't change anything ??
+    _p7b: 0, // Shoes underside (2 = visible, others = hidden)
+    _p5: 0,  // 0=Nothing, 1=Shirt.
   },
 }, false, 60, 20);
 
