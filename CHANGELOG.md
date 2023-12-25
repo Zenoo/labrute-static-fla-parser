@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Zenoo/labrute-static-fla-parser/compare/v1.0.2...v1.0.3) (2023-12-25)
+
+
+### Bug Fixes
+
+* Blurry assets ([fc76fbe](https://github.com/Zenoo/labrute-static-fla-parser/commit/fc76fbe2c83ff07c307f00dbdedc915d4d3f47ee))
+
 ## [1.0.2](https://github.com/Zenoo/labrute-static-fla-parser/compare/v1.0.1...v1.0.2) (2023-12-23)
 
 
