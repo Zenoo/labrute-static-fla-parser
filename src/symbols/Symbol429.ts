@@ -33,11 +33,6 @@ export const Symbol429: Symbol = {
       {
         "type": "symbol",
         "name": "Symbol21",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
         "transform": {
           "tx": 1.4,
           "ty": -12.5,
@@ -68,11 +63,6 @@ export const Symbol429: Symbol = {
       {
         "type": "symbol",
         "name": "Symbol21",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
         "transform": {
           "tx": 1.4,
           "ty": -12.5,

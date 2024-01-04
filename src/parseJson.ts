@@ -560,6 +560,19 @@ const ignoreParts: number[] = [
   736,
 ];
 
+// Some color transforms should be ignored
+// Symbol number: [frameNumber, partIdx]
+const ignoreColorTransforms: Record<number, [number, number] | undefined> = {
+  // Male armor 6
+  162: [6, 138],
+  203: [0, 200],
+  228: [6, 138],
+  327: [1, 326],
+  411: [0, 59],
+  429: [0, 21],
+  456: [6, 455],
+};
+
 const getSvg = (symbolName: string, svgIndex: number): Svg => {
   const name = symbolName.split(' ').join('');
   let svgNumber = +name.replace('Symbol', '');
@@ -674,7 +687,7 @@ const parseSymbol = (symbolItem?: DOMSymbolItem): Symbol => {
 
         // Sub symbol
         if (element.name === 'DOMSymbolInstance') {
-          const colors = element.elements?.find((element) => element.name === 'color')?.elements?.[0] as Color | undefined;
+          let colors = element.elements?.find((element) => element.name === 'color')?.elements?.[0] as Color | undefined;
           const matrix = element.elements?.find((element) => element.name === 'matrix')?.elements?.[0] as Matrix | undefined;
 
           const customIndex = element.attributes?.name;
@@ -684,6 +697,13 @@ const parseSymbol = (symbolItem?: DOMSymbolItem): Symbol => {
           // Check if part is ignored
           if (ignoreParts.includes(+(element.attributes?.libraryItemName || '').split(' ')[1])) {
             partIdx = undefined;
+          }
+
+          const elementNumber = +(element.attributes?.libraryItemName || '').split(' ')[1];
+
+          // Check if color transform is ignored (add default back)
+          if (ignoreColorTransforms[symbolNumber]?.[0] === index && ignoreColorTransforms[symbolNumber]?.[1] === elementNumber) {
+            colors = undefined;
           }
 
           // Store part details

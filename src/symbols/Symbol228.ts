@@ -77,11 +77,6 @@ export const Symbol228: Symbol = {
       {
         "type": "symbol",
         "name": "Symbol138",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
         "transform": {
           "tx": 0.55,
           "ty": -12.75,

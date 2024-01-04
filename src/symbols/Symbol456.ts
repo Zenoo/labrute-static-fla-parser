@@ -95,11 +95,6 @@ export const Symbol456: Symbol = {
       {
         "type": "symbol",
         "name": "Symbol455",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
         "transform": {
           "tx": -2,
           "ty": 0.45,

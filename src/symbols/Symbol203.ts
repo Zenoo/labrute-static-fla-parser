@@ -15,11 +15,6 @@ export const Symbol203: Symbol = {
       {
         "type": "symbol",
         "name": "Symbol200",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
         "transform": {
           "tx": 0,
           "ty": 0,
@@ -32,11 +27,6 @@ export const Symbol203: Symbol = {
       {
         "type": "symbol",
         "name": "Symbol200",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
         "transform": {
           "tx": 0,
           "ty": 0,

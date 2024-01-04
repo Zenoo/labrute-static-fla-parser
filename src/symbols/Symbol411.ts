@@ -15,11 +15,6 @@ export const Symbol411: Symbol = {
       {
         "type": "symbol",
         "name": "Symbol59",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
         "transform": {
           "tx": -4.25,
           "ty": -13.75,
@@ -34,11 +29,6 @@ export const Symbol411: Symbol = {
       {
         "type": "symbol",
         "name": "Symbol59",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
         "transform": {
           "tx": -4.25,
           "ty": -13.75,
