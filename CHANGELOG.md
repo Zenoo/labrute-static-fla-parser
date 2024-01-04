@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.4](https://github.com/Zenoo/labrute-static-fla-parser/compare/v1.0.3...v1.0.4) (2024-01-04)
+
+
+### Bug Fixes
+
+* Male armor 6 color offset ([af1972b](https://github.com/Zenoo/labrute-static-fla-parser/commit/af1972b91721a27065274c36d4658c9c961b17b0))
+* Male armor 6 variation 0 color offset ([e152657](https://github.com/Zenoo/labrute-static-fla-parser/commit/e1526572d63168c3ba8baa13b55220b762764cc2))
+* Male left leg tan ([00c0956](https://github.com/Zenoo/labrute-static-fla-parser/commit/00c0956108eb09c93f6584899323c8e7ce69a539))
+
 ## [1.0.3](https://github.com/Zenoo/labrute-static-fla-parser/compare/v1.0.2...v1.0.3) (2023-12-25)
 
 
