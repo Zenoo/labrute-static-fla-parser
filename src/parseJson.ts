@@ -561,16 +561,16 @@ const ignoreParts: number[] = [
 ];
 
 // Some color transforms should be ignored
-// Symbol number: [frameNumber, partIdx]
-const ignoreColorTransforms: Record<number, [number, number] | undefined> = {
+// Symbol number: [frameNumber, partIdx][]
+const ignoreColorTransforms: Record<number, [number, number][] | undefined> = {
   // Male armor 6
-  162: [6, 138],
-  203: [0, 200],
-  228: [6, 138],
-  327: [1, 326],
-  411: [0, 59],
-  429: [0, 21],
-  456: [6, 455],
+  162: [[6, 138]],
+  203: [[0, 200]],
+  228: [[6, 138]],
+  327: [[0, 320], [1, 326]],
+  411: [[0, 59]],
+  429: [[0, 21]],
+  456: [[6, 455]],
 };
 
 const getSvg = (symbolName: string, svgIndex: number): Svg => {
@@ -702,8 +702,12 @@ const parseSymbol = (symbolItem?: DOMSymbolItem): Symbol => {
           const elementNumber = +(element.attributes?.libraryItemName || '').split(' ')[1];
 
           // Check if color transform is ignored (add default back)
-          if (ignoreColorTransforms[symbolNumber]?.[0] === index && ignoreColorTransforms[symbolNumber]?.[1] === elementNumber) {
-            colors = undefined;
+          if (ignoreColorTransforms[symbolNumber]) {
+            const ignore = ignoreColorTransforms[symbolNumber]?.find((ignore) => ignore[0] === index && ignore[1] === elementNumber);
+
+            if (ignore) {
+              colors = undefined;
+            }
           }
 
           // Store part details
