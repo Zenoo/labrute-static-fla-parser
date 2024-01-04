@@ -37,6 +37,11 @@ export const Symbol135: Symbol = {
       {
         "type": "symbol",
         "name": "Symbol113",
+        "colorOffset": {
+          "r": -16,
+          "g": -50,
+          "b": -80
+        },
         "transform": {
           "tx": 0,
           "ty": 0

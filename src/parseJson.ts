@@ -573,6 +573,13 @@ const ignoreColorTransforms: Record<number, [number, number][] | undefined> = {
   456: [[6, 455]],
 };
 
+// Some color transforms are missing
+// Symbol number: [frameNumber, partIdx, r, g, b][]
+const missingColorTransforms: Record<number, [number, number, number, number, number][] | undefined> = {
+  // Male left leg in shorts
+  135: [[0, 113, -16, -50, -80]],
+};
+
 const getSvg = (symbolName: string, svgIndex: number): Svg => {
   const name = symbolName.split(' ').join('');
   let svgNumber = +name.replace('Symbol', '');
@@ -701,12 +708,28 @@ const parseSymbol = (symbolItem?: DOMSymbolItem): Symbol => {
 
           const elementNumber = +(element.attributes?.libraryItemName || '').split(' ')[1];
 
-          // Check if color transform is ignored (add default back)
+          // Check if color transform is ignored
           if (ignoreColorTransforms[symbolNumber]) {
             const ignore = ignoreColorTransforms[symbolNumber]?.find((ignore) => ignore[0] === index && ignore[1] === elementNumber);
 
             if (ignore) {
               colors = undefined;
+            }
+          }
+
+          // Check if color transform is missing
+          if (missingColorTransforms[symbolNumber]) {
+            const missing = missingColorTransforms[symbolNumber]?.find((missing) => missing[0] === index && missing[1] === elementNumber);
+
+            if (missing) {
+              colors = {
+                name: 'Color',
+                attributes: {
+                  redOffset: `${missing[2]}`,
+                  greenOffset: `${missing[3]}`,
+                  blueOffset: `${missing[4]}`,
+                },
+              };
             }
           }
 

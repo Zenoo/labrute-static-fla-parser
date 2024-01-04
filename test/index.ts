@@ -251,10 +251,6 @@ class Fighter {
   
       const frameParts = symbol.frames?.[frameToLoad] ?? [];
       const usedContainers: Record<string, number> = {};
-      
-      if (symbol.name === 'Symbol712') {
-        console.log(frameParts);
-      }
   
       for (let i = 0; i < frameParts.length; i++) {
         const framePart = frameParts[i];
@@ -296,14 +292,21 @@ class Fighter {
   
         // Apply color offset
         if (framePart.colorOffset) {
-          framePartContainer.filters = [new Filter(undefined, ColorOffsetShader, {
-            offset: new Float32Array([
-              framePart.colorOffset.r ?? 0,
-              framePart.colorOffset.g ?? 0,
-              framePart.colorOffset.b ?? 0
-            ]),
-            mult: new Float32Array([1, 1, 1])
-          })];
+          const ignored = [
+            '',
+            'Symbol514',
+          ];
+          if (!ignored.includes(framePart.name)) {
+            console.log(`Color offset for ${framePart.name}`)
+            framePartContainer.filters = [new Filter(undefined, ColorOffsetShader, {
+              offset: new Float32Array([
+                framePart.colorOffset.r ?? 0,
+                framePart.colorOffset.g ?? 0,
+                framePart.colorOffset.b ?? 0
+              ]),
+              mult: new Float32Array([1, 1, 1])
+            })];
+          }
         }
   
         // Apply alpha
@@ -346,7 +349,7 @@ type BruteState = {
 };
 
 const fighter = new Fighter({
-  type: 'male',
+  type: 'female',
   colors: {
     _col0: '#eaaca6',  // Skin
     _col0a: '#eaaca6',  // Face
@@ -357,7 +360,7 @@ const fighter = new Fighter({
     _col1c: '#ffaa1e', // Hair front
     _col1d: '#ffaa1e', // Eyebrows
     _col3: '#bb1111',  // Primary (includes eyes)
-    _col2: '#8ba3d7',  // Secondary
+    _col2: '#ffffff',  // Secondary
     _col2b: '#7a73c8', // Accent 1
     _col3b: '#fae31f', // Accent 2
     _col2a: '#fff9ae', // Accent 3
@@ -365,19 +368,19 @@ const fighter = new Fighter({
     _col4a: '#00ff00', // Shoes accent ?
     _col4b: '#0000ff', // ??
   },
-  //p2:5,p3:3,p4:3,p7:6,p1:0,p1a:1,p1b:0,p6:1,p8:1,p7b:0,p5:0
+  //p2:6,p3:10,p4:4,p7:6,p1:1,p1a:0,p1b:0,p6:1,p8:3,p7b:0,p5:1
   parts: {
-    _p2: 5,  // Body size (small = 0, big = 7) (male only, 0 for females)
-    _p3: 3,  // Hair [0-11] 12 = no head
-    _p4: 3,  // (male) Beard [0-4] 5 = nothing / (female) Front hair [0-2] 3 = nothing
-    _p7: 6,  // Main clothing [0-6] 7 = naked
-    _p1: 0,  // Armor variation [0-1]
+    _p2: 0,  // Body size (small = 0, big = 7) (male only, 0 for females)
+    _p3: 1,  // Hair [0-11] 12 = no head
+    _p4: 0,  // (male) Beard [0-4] 5 = nothing / (female) Front hair [0-2] 3 = nothing
+    _p7: 4,  // Main clothing [0-6] 7 = naked
+    _p1: 1,  // Armor variation [0-1]
     _p1a: 1, // [0-1] 0=belt, 1=nothing
     _p1b: 0, // 0=roman belt, 1=nothing
-    _p6: 1,  // (male) 0=shorts, 1=trousers / (female) 0=shorts, 1=nothing
+    _p6: 0,  // (male) 0=shorts, 1=trousers / (female) 0=shorts, 1=nothing
     _p8: 1,  // [0-4] Supposed to be shoes but doesn't change anything ??
     _p7b: 0, // Shoes underside (2 = visible, others = hidden)
-    _p5: 0,  // 0=Nothing, 1=Shirt.
+    _p5: 1,  // 0=Nothing, 1=Shirt.
   },
 }, false, 60, 20);
 
