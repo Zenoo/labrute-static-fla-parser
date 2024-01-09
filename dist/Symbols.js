@@ -1176,6 +1176,11 @@ var Symbol135 = {
             {
                 "type": "symbol",
                 "name": "Symbol113",
+                "colorOffset": {
+                    "r": -16,
+                    "g": -50,
+                    "b": -80
+                },
                 "transform": {
                     "tx": 0,
                     "ty": 0
@@ -1868,11 +1873,6 @@ var Symbol162 = {
             {
                 "type": "symbol",
                 "name": "Symbol138",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": 0.05,
                     "ty": -12.65,
@@ -3051,11 +3051,6 @@ var Symbol203 = {
             {
                 "type": "symbol",
                 "name": "Symbol200",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": 0,
                     "ty": 0,
@@ -3068,11 +3063,6 @@ var Symbol203 = {
             {
                 "type": "symbol",
                 "name": "Symbol200",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": 0,
                     "ty": 0,
@@ -3703,11 +3693,6 @@ var Symbol228 = {
             {
                 "type": "symbol",
                 "name": "Symbol138",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": 0.55,
                     "ty": -12.75,
@@ -5892,11 +5877,6 @@ var Symbol327 = {
             {
                 "type": "symbol",
                 "name": "Symbol320",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": 0.9,
                     "ty": -0.8,
@@ -5909,11 +5889,6 @@ var Symbol327 = {
             {
                 "type": "symbol",
                 "name": "Symbol326",
-                "colorOffset": {
-                    "r": -108,
-                    "g": -113,
-                    "b": -108
-                },
                 "transform": {
                     "tx": -1.4,
                     "ty": -0.75,
@@ -5950,11 +5925,6 @@ var Symbol327 = {
             {
                 "type": "symbol",
                 "name": "Symbol320",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": 0.9,
                     "ty": -0.8,
@@ -10596,11 +10566,6 @@ var Symbol411 = {
             {
                 "type": "symbol",
                 "name": "Symbol59",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": -4.25,
                     "ty": -13.75,
@@ -10615,11 +10580,6 @@ var Symbol411 = {
             {
                 "type": "symbol",
                 "name": "Symbol59",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": -4.25,
                     "ty": -13.75,
@@ -11102,11 +11062,6 @@ var Symbol429 = {
             {
                 "type": "symbol",
                 "name": "Symbol21",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": 1.4,
                     "ty": -12.5,
@@ -11137,11 +11092,6 @@ var Symbol429 = {
             {
                 "type": "symbol",
                 "name": "Symbol21",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": 1.4,
                     "ty": -12.5,
@@ -12094,11 +12044,6 @@ var Symbol456 = {
             {
                 "type": "symbol",
                 "name": "Symbol455",
-                "colorOffset": {
-                    "r": -110,
-                    "g": -90,
-                    "b": -80
-                },
                 "transform": {
                     "tx": -2,
                     "ty": 0.45,

@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zenoo/labrute-sla-parser.git"
+    "url": "git+https://github.com/Zenoo/labrute-static-fla-parser.git"
   },
   "bugs": {
-    "url": "https://github.com/Zenoo/labrute-sla-parser/issues"
+    "url": "https://github.com/Zenoo/labrute-static-fla-parser/issues"
   },
-  "homepage": "https://github.com/Zenoo/labrute-sla-parser#readme",
+  "homepage": "https://github.com/Zenoo/labrute-static-fla-parser#readme",
   "keywords": [
     "twinoid",
     "muxxu",

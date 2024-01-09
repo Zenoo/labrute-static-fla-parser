@@ -349,7 +349,7 @@ type BruteState = {
 };
 
 const fighter = new Fighter({
-  type: 'female',
+  type: 'male',
   colors: {
     _col0: '#eaaca6',  // Skin
     _col0a: '#eaaca6',  // Face
@@ -370,11 +370,11 @@ const fighter = new Fighter({
   },
   //p2:6,p3:10,p4:4,p7:6,p1:1,p1a:0,p1b:0,p6:1,p8:3,p7b:0,p5:1
   parts: {
-    _p2: 0,  // Body size (small = 0, big = 7) (male only, 0 for females)
+    _p2: 4,  // Body size (small = 0, big = 7) (male only, 0 for females)
     _p3: 1,  // Hair [0-11] 12 = no head
     _p4: 0,  // (male) Beard [0-4] 5 = nothing / (female) Front hair [0-2] 3 = nothing
     _p7: 4,  // Main clothing [0-6] 7 = naked
-    _p1: 1,  // Armor variation [0-1]
+    _p1: 0,  // Armor variation [0-1]
     _p1a: 1, // [0-1] 0=belt, 1=nothing
     _p1b: 0, // 0=roman belt, 1=nothing
     _p6: 0,  // (male) 0=shorts, 1=trousers / (female) 0=shorts, 1=nothing
