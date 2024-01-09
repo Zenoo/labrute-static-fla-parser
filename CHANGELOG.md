@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/Zenoo/labrute-static-fla-parser/compare/v1.0.4...v1.0.5) (2024-01-09)
+
+
+### Bug Fixes
+
+* Missing build ([790146b](https://github.com/Zenoo/labrute-static-fla-parser/commit/790146b20d49f81c600b725c6640da47d90424aa))
+
 ## [1.0.4](https://github.com/Zenoo/labrute-static-fla-parser/compare/v1.0.3...v1.0.4) (2024-01-04)
 
 
