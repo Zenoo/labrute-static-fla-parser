@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/Zenoo/labrute-static-fla-parser/compare/v1.0.5...v1.0.6) (2024-07-11)
+
+
+### Bug Fixes
+
+* Body/Color strings readers ([0460bc7](https://github.com/Zenoo/labrute-static-fla-parser/commit/0460bc77f23d0f0ac0e20afe4c79b34d5c48c034))
+
 ## [1.0.5](https://github.com/Zenoo/labrute-static-fla-parser/compare/v1.0.4...v1.0.5) (2024-01-09)
 
 
