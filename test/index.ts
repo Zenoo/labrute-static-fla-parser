@@ -5,6 +5,7 @@ import ColorOffsetShader from './ColorOffsetShader';
 import { PixiHelper } from './PixiHelper';
 import { Symbol752 } from '../src/Symbols/Symbol752';
 import { Symbol460 } from '../src/Symbols/Symbol460';
+import { readBodyString, readColorString } from './utils';
 
 const FEMALE_SYMBOL = Symbol752;
 const MALE_SYMBOL = Symbol460;
@@ -350,38 +351,8 @@ type BruteState = {
 
 const fighter = new Fighter({
   type: 'male',
-  colors: {
-    _col0: '#eaaca6',  // Skin
-    _col0a: '#eaaca6',  // Face
-    _col0c: '#eaaca6',  // Ear
-    _col1: '#ffaa1e',  // Hair
-    _col1a: '#ffaa1e', // Hair back
-    _col1b: '#ffaa1e', // Hair back 2
-    _col1c: '#ffaa1e', // Hair front
-    _col1d: '#ffaa1e', // Eyebrows
-    _col3: '#bb1111',  // Primary (includes eyes)
-    _col2: '#ffffff',  // Secondary
-    _col2b: '#7a73c8', // Accent 1
-    _col3b: '#fae31f', // Accent 2
-    _col2a: '#fff9ae', // Accent 3
-    _col4: '#559399',  // Shirt
-    _col4a: '#00ff00', // Shoes accent ?
-    _col4b: '#0000ff', // ??
-  },
-  //p2:6,p3:10,p4:4,p7:6,p1:1,p1a:0,p1b:0,p6:1,p8:3,p7b:0,p5:1
-  parts: {
-    _p2: 4,  // Body size (small = 0, big = 7) (male only, 0 for females)
-    _p3: 1,  // Hair [0-11] 12 = no head
-    _p4: 0,  // (male) Beard [0-4] 5 = nothing / (female) Front hair [0-2] 3 = nothing
-    _p7: 4,  // Main clothing [0-6] 7 = naked
-    _p1: 0,  // Armor variation [0-1]
-    _p1a: 1, // [0-1] 0=belt, 1=nothing
-    _p1b: 0, // 0=roman belt, 1=nothing
-    _p6: 0,  // (male) 0=shorts, 1=trousers / (female) 0=shorts, 1=nothing
-    _p8: 1,  // [0-4] Supposed to be shoes but doesn't change anything ??
-    _p7b: 0, // Shoes underside (2 = visible, others = hidden)
-    _p5: 1,  // 0=Nothing, 1=Shirt.
-  },
+  colors: readColorString('male', '03030301010101010803151401191418'),
+  parts: readBodyString('01013100611'),
 }, false, 60, 20);
 
 console.log(`SVG count: ${fighter.svgs.length}`);
